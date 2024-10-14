@@ -10,6 +10,11 @@
     - [Endpoint](#endpoint)
     - [Request and Method](#request-and-method)
     - [Response](#response)
+  - [3. Run Optimization](#3-Run-Optimization) 
+    - [Endpoint](#endpoint)
+    - [Request and Method](#request-and-method)
+    - [Response](#response)
+    
 - [Deployment](#deployment)
 
 ## API Endpoints
@@ -778,6 +783,27 @@ http://127.0.0.1:8000/retryOptimization
 }
 ```
 
+### 3. Run Optimization
+
+#### Endpoint
+```
+http://127.0.0.1:8000/runOptimization
+```
+
+#### Request and Method
+- Method: POST
+- Request Body:
+```json
+{
+  "optimization_key":"20241011143000_strategy",
+  "sequence_id" : 2
+}
+
+```
+
+#### Response
+```json
+```
 ## Deployment
 
 (Deployment details to be added)
