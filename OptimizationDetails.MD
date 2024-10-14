@@ -805,5 +805,61 @@ http://127.0.0.1:8000/runOptimization
 ```json
 ```
 ## Deployment
+This guide will help you deploy the Strategy Optimization API on a server.
+In this folder, locate the `db_credentials` section and update the credentials in your script according to your MySQL database configuration.
 
-(Deployment details to be added)
+### 1. Set UP MYSQL database crendetials:
+
+# Strategy Optimization Setup and Deployment
+
+This guide will help you set up the necessary environment and deploy the strategy optimization script.
+
+## 1. Set Up MySQL Database Credentials
+
+1. Navigate to the following folder in your project:
+
+    ```
+    Sagar_Backend\time_based_strategy\strategy_optimization
+    ```
+
+2. Locate the section in the script where the database credentials are defined and update the credentials according to your MySQL database settings.
+
+    In the script, you will find the following block of code:
+
+    ```python
+    db_credentials = {
+        'host': 'localhost',
+        'user': 'root',
+        'password': 'pegasus',
+        'database': 'sagar_strategy'
+    }
+    ```
+
+3. Update the values for `'host'`, `'user'`, `'password'`, and `'database'` to match your MySQL setup. For example:
+
+    ```python
+    db_credentials = {
+        'host': 'your_host',
+        'user': 'your_user',
+        'password': 'your_password',
+        'database': 'your_database'
+    }
+    ```
+
+## 2. Install Required Packages
+
+Before running the script, ensure that all the required packages are installed. This can be done by using the `requirements.txt` file.
+
+
+1. Open your terminal or command prompt.
+2. Navigate to the project directory where the `requirements.txt` file is located.
+3. Run the following command:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+This command will install all the necessary Python packages for the project.
+```bash
+pip install -r requirements.txt
+
